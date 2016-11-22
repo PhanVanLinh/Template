@@ -3,7 +3,7 @@
 
 Use lowercase_underscore
 
-#### - ID Naming
+#### #ID Naming
 
 ID
 
@@ -25,7 +25,7 @@ ID
 
 ```
 
-#### - Strings
+#### #Strings
 
 #####For short text: use lowercase_underscore
 
@@ -45,7 +45,7 @@ ID
 | `hint_`            | For hint/placeholder         | 
 | `text_`            | For long text/description  |
 
-#### - Styles and Themes
+#### #Styles and Themes
 
 Uppercase first letter
 
@@ -55,7 +55,25 @@ Uppercase first letter
 
 ```
 
-#### - Attribute order (suggest: always use AndroiStudio format)
+#### #Dimens
+
+Choose one layout type as a standar layout (for example: values-360dp)
+
+| Prefix             | Description                           |
+| -----------------  | --------------------------------------|
+| `dp_`              | For dp                                |
+| `sp_`              | For sp                                |        
+| `dp_*_negative`    | For negative value                    | 
+
+```xml
+
+<dimens name="dp_10">10dp</dimens>
+<dimens name="sp_10">10sp</dimens>
+<dimens name="dp_10_negative">-10dp</dimens>
+
+```
+
+#### #Attribute order (suggest: always use AndroiStudio format)
 
 1. View Id
 2. Style
