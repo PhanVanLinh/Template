@@ -3,7 +3,7 @@
 
 Use lowercase_underscore
 
-#### 3.2.1 ID Naming
+#### - ID Naming
 
 ID
 
@@ -25,9 +25,9 @@ ID
 
 ```
 
-#### 3.2.2 Strings
+#### - Strings
 
-#For short text: use lowercase_underscore
+#####For short text: use lowercase_underscore
 
 
 ```xml
@@ -36,7 +36,7 @@ ID
 
 ```
 
-#For long text, use prefix like
+#####For long text, use prefix like
 
 | Prefix             | Description                           |
 | -----------------  | --------------------------------------|
@@ -45,7 +45,7 @@ ID
 | `hint_`            | For hint/placeholder         | 
 | `text_`            | For long text/description  |
 
-#### 3.2.3 Styles and Themes
+#### - Styles and Themes
 
 Uppercase first letter
 
@@ -55,7 +55,7 @@ Uppercase first letter
 
 ```
 
-#### 3.2.4 Attribute order (suggest: always use AndroiStudio format)
+#### - Attribute order (suggest: always use AndroiStudio format)
 
 1. View Id
 2. Style
