@@ -4,7 +4,7 @@ First should follow Android Coding Style
 https://source.android.com/source/code-style.html#fully-qualify-imports
 
 
-### Class Property order
+#### #Class Property order
 1. Constants
 2. Fields
 3. Constructors
@@ -13,8 +13,8 @@ https://source.android.com/source/code-style.html#fully-qualify-imports
 6. Private methods
 7. Inner classes or interfaces
 
-### #Activity lifecycle function order
-
+#### #Activity lifecycle function order
+```java
 public class MainActivity extends Activity {
     
     @Override 
@@ -29,37 +29,36 @@ public class MainActivity extends Activity {
     @Override 
     public void onDestory() {}
 }
-
+```
 #### #Function argument order
-
+```java
 // Context should always place at first
 public User loadUser(Context context, int userId);
 
 // Callbacks should always place at last
 public void loadUserAsync(Context context, int userId, UserCallback callback);
-
+```
 
 #### #For xml mapped naming
 
-| Layout               | Prefix              |
-| -----------------    | -----------------   |
-| `TextView`          | `tv`            | 
+| Layout               | Prefix              | Prefix              |
+| -----------------    | -----------------   | -----------------   |
+| `TextView`          | `tv`            | `tv`            | 
 | `ImageView`          | `iv`            |
 | `EditText`          | `edt`            |
 | `RecyclerView`          | `rv`            |
-| `Progressbar`          | `pgb_`            | 
-| `RadioButton`          | `rd_`            | 
-| `RadioButton`          | `rg_`            | 
+| `Progressbar`          | `pgb`            | 
+| `RadioButton`          | `rd`            | 
+| `RadioButton`          | `rg`            | 
 | `LinearLayout`          | `ll`            | 
 | `RelativeLayout`          | `rl`            |
 | `FrameLayout`          | `fl`            |
 
 
-
 ### Use Log
 
 Every class should have a default variable TAG
-
+```java
 public class MyClass {
     private static final String TAG = "MyClass";
 
@@ -67,7 +66,7 @@ public class MyClass {
         Log.e(TAG, "Error message");
     }
 }
-
+```
 ### 3.2 Layout resource naming
 
 
