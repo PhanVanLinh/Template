@@ -1,4 +1,4 @@
-### 3.2 Java naming
+### I. Java style
 
 First should follow Android Coding Style
 https://source.android.com/source/code-style.html#fully-qualify-imports
@@ -41,10 +41,11 @@ public void loadUserAsync(Context context, int userId, UserCallback callback);
 
 #### #For xml mapped naming
 
-| Layout               | Prefix              | Prefix              |
+| Layout               | Prefix              | Example              |
 | -----------------    | -----------------   | -----------------   |
-| `TextView`          | `tv`            | `tv`            | 
-| `ImageView`          | `iv`            |
+| `TextView`          | `tv`            | `tvTitle`            | 
+| `ImageView`          | `btn`            |`btnOk`            | 
+| `ImageView`          | `iv`            |`ivAvatar`            | 
 | `EditText`          | `edt`            |
 | `RecyclerView`          | `rv`            |
 | `Progressbar`          | `pgb`            | 
@@ -67,24 +68,21 @@ public class MyClass {
     }
 }
 ```
-### 3.2 Layout resource naming
+### II. Resource Style
 
-
-| Layout               | Prefix              |
-| -----------------    | -----------------   |
-| `Activity`           | `activity_`             |
-| `Fragment`          | `fragment_`            | 
-| `Dialog`          | `dialog_`            | 
-| `RecyclerView Items`          | `item_`            | 
-| `Another Layout`          | `layout_`            | 
-
-### 3.2 Resources naming
-
+#### #Layout naming
 Use lowercase_underscore
 
-#### #ID Naming
+| Layout               | Prefix              | Example              |
+| -----------------    | -----------------   |-----------------   |
+| `Activity`           | `activity_`             | `activity_main`             |
+| `Fragment`          | `fragment_`            | 
+| `Dialog`          | `dialog_`            | 
+| `RecyclerView List Items`          | `item_list_`            | 
+| `RecyclerView Grid Items`          | `item_grid_`            | 
+| `Another Layout`          | `layout_`            | 
 
-ID
+#### #ID Naming
 
 | Element              | Prefix              |
 | -----------------    | -----------------   |
@@ -105,10 +103,19 @@ ID
 
 ```
 
+#### #Drawable resource naming
+
+| State        | Suffixes        | Example                     |
+|--------------|-----------------|-----------------------------|
+| Normal       | `_normal`       | `button_ok_normal.png`    |
+| Pressed      | `_pressed`      | `button_ok_pressed.png`   |
+| Focused      | `_focused`      | `button_ok_focused.png`   |
+| Disabled     | `_disabled`     | `button_ok_disabled.png`  |
+| Selected     | `_selected`     | `button_ok_selected.png`  |
+
 #### #Strings
 
 #####For short text: use lowercase_underscore
-
 
 ```xml
 
@@ -124,6 +131,12 @@ ID
 | `msg_`             | For notification or message        |       
 | `hint_`            | For hint/placeholder         | 
 | `text_`            | For long text/description  |
+
+
+#### #Menu
+
+Menu name should follow `activity` or `fragment` name
+Example: `MainActivity` => `menu_main`
 
 #### #Styles and Themes
 
@@ -152,6 +165,7 @@ Choose one layout type as a standar layout (for example: values-360dp)
 <dimens name="dp_10_negative">-10dp</dimens>
 
 ```
+
 
 #### #XML end tags
 Should
