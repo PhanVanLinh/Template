@@ -1,10 +1,48 @@
 ### 3.2 Java naming
-Use camel case
 
-For xml mapped
-| Xml               | Prefix               | Example              |
-| -----------------    | -----------------   | -----------------   |
-| `Button`           | `btn`             | `btnOk`             | 
+First should follow Android Coding Style
+https://source.android.com/source/code-style.html#fully-qualify-imports
+
+
+### Class Property order
+1. Constants
+2. Fields
+3. Constructors
+4. Override methods and callbacks (public or private)
+5. Public methods
+6. Private methods
+7. Inner classes or interfaces
+
+### #Activity lifecycle function order
+
+public class MainActivity extends Activity {
+    
+    @Override 
+    public void onCreate() {} 
+
+    @Override 
+    public void onResume() {}
+
+    @Override 
+    public void onPause() {}
+
+    @Override 
+    public void onDestory() {}
+}
+
+#### #Function argument order
+
+// Context should always place at first
+public User loadUser(Context context, int userId);
+
+// Callbacks should always place at last
+public void loadUserAsync(Context context, int userId, UserCallback callback);
+
+
+#### #For xml mapped naming
+
+| Layout               | Prefix              |
+| -----------------    | -----------------   |
 | `TextView`          | `tv`            | 
 | `ImageView`          | `iv`            |
 | `EditText`          | `edt`            |
@@ -16,6 +54,19 @@ For xml mapped
 | `RelativeLayout`          | `rl`            |
 | `FrameLayout`          | `fl`            |
 
+
+
+### Use Log
+
+Every class should have a default variable TAG
+
+public class MyClass {
+    private static final String TAG = "MyClass";
+
+    public myMethod() {
+        Log.e(TAG, "Error message");
+    }
+}
 
 ### 3.2 Layout resource naming
 
@@ -103,6 +154,20 @@ Choose one layout type as a standar layout (for example: values-360dp)
 
 ```
 
+#### #XML end tags
+Should
+```xml
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+```
+Shouldn't
+```xml
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</TextView>
+```
 #### #Attribute order (suggest: always use AndroiStudio format)
 
 1. View Id
