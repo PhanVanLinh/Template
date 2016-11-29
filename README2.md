@@ -1,3 +1,22 @@
+### 3.2 Java naming
+Use camel case
+
+For xml mapped
+| Xml               | Prefix               | Example              |
+| -----------------    | -----------------   | -----------------   |
+| `Button`           | `btn`             | `btnOk`             | 
+| `TextView`          | `tv`            | 
+| `ImageView`          | `iv`            |
+| `EditText`          | `edt`            |
+| `RecyclerView`          | `rv`            |
+| `Progressbar`          | `pgb_`            | 
+| `RadioButton`          | `rd_`            | 
+| `RadioButton`          | `rg_`            | 
+| `LinearLayout`          | `ll`            | 
+| `RelativeLayout`          | `rl`            |
+| `FrameLayout`          | `fl`            |
+
+
 ### 3.2 Layout resource naming
 
 
@@ -20,6 +39,7 @@ ID
 | Element              | Prefix              |
 | -----------------    | -----------------   |
 | `TextView`           | `text_`             |
+| `EditText`           | `edit_text_`             |
 | `ImageView`          | `image_`            | 
 | `Button`             | `button_`           |   
 | `Menu`               | `menu_`             |
