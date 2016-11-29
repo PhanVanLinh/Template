@@ -1,3 +1,13 @@
+### 3.2 Layout resource naming
+
+
+| Layout               | Prefix              |
+| -----------------    | -----------------   |
+| `Activity`           | `activity_`             |
+| `Fragment`          | `fragment_`            | 
+| `Dialog`          | `dialog_`            | 
+| `RecyclerView Items`          | `item_`            | 
+| `Another Layout`          | `layout_`            | 
 
 ### 3.2 Resources naming
 
